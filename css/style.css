@@ -704,6 +704,25 @@ section.mapaCentro div div p{
     font-size: 4rem;
   }
 }
+@media screen and (max-width:540px){
+  .infoCaja{
+    width:40vh;
+  }
+  .infoCajaTexto{
+    color:#a38051;
+    text-shadow:#333;
+    text-align: center;
+    text-shadow: 4px 4px 0px #333;
+    font-size: 2rem;
+  }
+  .infoCajaTexto h3{
+    font-size: 2rem;
+  }
+  .infoCajaTexto div p{
+    text-align: justify;
+    font-size: 1rem;
+  }
+  }
 @media screen and (max-width:500px){
     .menu {
       height: 70vw;
