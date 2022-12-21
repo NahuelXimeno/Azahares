@@ -41,24 +41,26 @@
         </section>
         <section class="lineasDoradas">
             <h3 class="formularioTitulo"> ¿En que te podemos ayudar?</h3>
-            <form action="" method="" enctype="">
+            <form action="https://formsubmit.co/d36fc6ee8d24e17a7e1ac4c8f9ff2bec" method="POST">
                 <div class="bordeFormulario">
                     <div class="formulario">
-                        <input type="text" placeholder="Nombre"> 
+                        <input type="text" name="nombre" required="required" placeholder="Nombre"> 
                     </div>
                     <div class="formulario">
-                        <input type="email" placeholder="E-Mail">
+                        <input type="email"  name="email" required="required" placeholder="E-Mail">
+                    </div>
+					<div class="formulario">
+                        <input type="text"  name="telefono" required="required" placeholder="Telefono">
                     </div>
                     <div class="formulario">
-                        <input type="text" placeholder="Asunto">
-                    </div>
-                    <div class="formulario">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" placeholder color: blue;></textarea>   
+                        <textarea name="mensaje" required="required" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>   
                     </div>
                     <div class="formulario">
                         <input class="formularioBtn" class="hover" type="submit">
                     </div>
                 </div>
+				<input type="hidden" name="_next" value="https://nahuelximeno.github.io/Azahares/">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
         <div class="formularioFondo"></div>
