@@ -5,39 +5,28 @@
 }
 body{
   background: linear-gradient(#000000,#242424);
+  line-height: 1.05;
+  
 }
 /*----------------------------Header----------------------------*/
 header {
-  position: fixed;
   z-index: 10;
 }
+.logoSize{
+  width: 100px;
+}
 .menu {
-  background-color: #a37f5170;
-  height: 100px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #967f6270;
+  color: #f1f1f1;
 }
-.menu .menu_list li a i {
-  font-size: 25px;
+.dropdown-item {
+  text-align: center;
 }
-.menu .menu_list {
-  display: flex;
-  list-style: none;
-  margin-right: 30px;
-  align-items: center;
+.menuLetras {
+  color: #f1f1f1;
 }
-.menu .menu_list li {
-  border-radius: 20px;
-  margin: 0 5px;
-  font-weight: 700;
-  padding: 7px 13px;
-  font-size: 18px;
-}
-.menu_list div{
-  display: flex;
-  border-radius: 20px;
+.navbar-nav {
+  --bs-nav-link-hover-color:#917046;
 }
 header li a, .dropbtn {
   display: inline-block;
@@ -70,7 +59,7 @@ header .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 header .dropdown-content a:hover {
   background-color: #f1f1f1;
@@ -80,8 +69,8 @@ header .dropdown:hover .dropdown-content {
   display: block;
   transition: 0.5s;
 }
-.active {
-  color: #a38051;
+.activo {
+  color: #917046;
   background-color: rgba(7, 7, 7, 0.384);
   border-radius: 20px;
 }
@@ -98,12 +87,18 @@ header .dropdown:hover .dropdown-content {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 10rem;
   line-height: 80px;
   color:#a38051;
   padding: 20px;
   text-align: center;
   z-index: 1;
+}
+.heroTexto h2{
+  font-size: 8rem; 
+}
+.heroTextoOtros h2{
+  font-size: 8rem; 
 }
 .heroTextoOtros{
   display: flex;
@@ -209,7 +204,7 @@ border-radius: 20px;
 section.servicios div div { 
   border: 1px solid #917046;
   width:230px;
-  height: 550px;
+  height: 580px;
   font-size: 1rem;
   color: #917046;
   background-color: #333;
@@ -237,6 +232,9 @@ section.servicios div div a{
   text-decoration: none;
   margin-bottom: 20px;
   }
+  section.servicios{
+    margin-bottom: -100px;
+    }
 div.dorado{
   background-image: url(../img/boxcoper.jpg);
   text-shadow: 2px 2px 0px #333;
@@ -325,6 +323,9 @@ height:250px;
 padding: 10px;
 border-radius: 20px;
 }
+section.serviciosOtros div div p{
+  margin-bottom: 0px;
+  }
 section.serviciosOtros div div { 
   border: 1px solid #917046;
   width:600px;
@@ -432,6 +433,9 @@ height: 100%;
   -moz-text-shadow: rgb(250, 247, 235) 2px 0 10px ;
   z-index: 1;
 }
+.heroTextoGaleria h2{
+  font-size: 6rem;
+}
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -488,6 +492,7 @@ height: 100%;
 
 /*----------------------------Nosotros------------------------------*/
 /*----------------------------Formulario----------------------------*/
+
 .formularioFondo{
   width: 100%;
   height: 40vh;
@@ -661,7 +666,7 @@ section.mapaCentro div div p{
   }
 }
 @media screen and (max-width:770px){
-  .heroTextoOtros{
+  .heroTextoOtros h2{
     font-size: 2.8rem;
   }
   section.serviciosOtros div div:hover { 
@@ -669,21 +674,14 @@ section.mapaCentro div div p{
   }
 }
 @media screen and (max-width:660px){
-  .heroTexto{
+  .heroTexto h2{
     font-size: 2.9rem;
+  }
+  .heroTexto{
+    height: 30vh;
   }
 }
 @media screen and (max-width:650px){
-  nav ul{
-    flex-direction:column;
-    text-align: center;
-  }
-  .menu {
-    height: 60vw;
-  }
-  header {
-    position: relative;
-  }
   .heroTextoGaleria img{
     width: 60%;
     }
@@ -697,8 +695,8 @@ section.mapaCentro div div p{
     font-size: 1rem;
     flex-direction: column;
   } 
-  .heroTexto{
-    height: 50vh;
+  .heroTexto {
+    height: 30vh;
   }
   .contact{
     font-size: 3rem;
@@ -731,10 +729,7 @@ section.mapaCentro div div p{
   }
   }
 @media screen and (max-width:500px){
-    .menu {
-      height: 70vw;
-    }
-    .heroTexto{
+    .heroTexto h2{
       font-size: 1.8rem;
     }
     .heroTextoGaleria h2{
@@ -745,9 +740,6 @@ section.mapaCentro div div p{
   .heroTextoGaleria img{
     width: 90%;
     height: 100%;
-    }
-    .menu {
-      height: 85vw;
     }
     .hero{
       height: 30vh;
