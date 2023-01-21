@@ -7,7 +7,11 @@ header li a:hover, .dropdown:hover .dropbtn{
     color: nth($colores, 1);
     transition-duration: 0.5s;
 }
-
+.activo {
+    color: #917046 ;
+    background-color: rgba(7, 7, 7, 0.384);
+    border-radius: 20px;
+}
 /*---------------------------Hovers Servicios Inicio----------------------------*/
 section.servicios div div a img:hover{
     transition: 0.5s;

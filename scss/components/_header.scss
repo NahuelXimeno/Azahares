@@ -2,11 +2,7 @@ header {
     z-index: 10;
     nav{
         .navbar-nav {
-            --bs-nav-link-hover-color:$nth($colores, 1);
-        }
-        .menu {
-            background-color: #967f6270;
-            color: nth($colores, 3);
+            --bs-nav-link-hover-color: #917046;
         }
     div{
         .logoSize{

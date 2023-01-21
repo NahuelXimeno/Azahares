@@ -1,4 +1,4 @@
-/*----------------------------Header----------------------------*/
+/*--------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -8,69 +8,9 @@ body {
   background: linear-gradient(#000000, #242424);
   line-height: 1.05; }
 
-header {
-  z-index: 10; }
-
-.logoSize {
-  width: 100px; }
-
 .menu {
   background-color: #967f6270;
-  color: #f1f1f1; }
-
-.dropdown-item {
-  text-align: center; }
-
-.menuLetras {
-  color: #f1f1f1; }
-
-.navbar-nav {
-  --bs-nav-link-hover-color: nth($colores, 1); }
-
-header li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-radius: 20px; }
-
-header li a:hover, .dropdown:hover .dropbtn {
-  transition: 0.5s;
-  background-color: #f9f9f9d5;
-  color: #917046;
-  transition-duration: 0.5s; }
-
-header li.dropdown {
-  display: inline-block; }
-
-header .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px; }
-
-header .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center; }
-
-header .dropdown-content a:hover {
-  background-color: #f1f1f1;
-  transition: 0.5s; }
-
-header .dropdown:hover .dropdown-content {
-  display: block;
-  transition: 0.5s; }
-
-.activo {
-  color: #917046;
-  background-color: rgba(7, 7, 7, 0.384);
-  border-radius: 20px; }
+  color: #ffffff; }
 
 /*---------------------------Variables----------------------------*/
 .heroServiciosCB, .heroServiciosCU, .heroServiciosC {
@@ -85,10 +25,7 @@ header .dropdown:hover .dropdown-content {
 header {
   z-index: 10; }
   header nav .navbar-nav {
-    --bs-nav-link-hover-color:$nth($colores, 1); }
-  header nav .menu {
-    background-color: #967f6270;
-    color: #ffffff; }
+    --bs-nav-link-hover-color: #917046; }
   header nav div .logoSize {
     width: 100px; }
   header nav div li .menuLetras {
@@ -586,6 +523,11 @@ header li a:hover, .dropdown:hover .dropbtn {
   background-color: #f9f9f9d5;
   color: #917046;
   transition-duration: 0.5s; }
+
+.activo {
+  color: #917046;
+  background-color: rgba(7, 7, 7, 0.384);
+  border-radius: 20px; }
 
 /*---------------------------Hovers Servicios Inicio----------------------------*/
 section.servicios div div a img:hover {
