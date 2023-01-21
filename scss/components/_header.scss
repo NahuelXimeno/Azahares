@@ -1,0 +1,36 @@
+header {
+    z-index: 10;
+    nav{
+        .navbar-nav {
+            --bs-nav-link-hover-color:$nth($colores, 1);
+        }
+        .menu {
+            background-color: #967f6270;
+            color: nth($colores, 3);
+        }
+    div{
+        .logoSize{
+            width: 100px;
+        }
+        li{
+            .menuLetras {
+                color: nth($colores, 3);
+            }
+            a, .dropbtn {
+                display: inline-block;
+                color: nth($colores, 3);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                border-radius: 20px;
+            }
+            .dropdown {
+                display: inline-block;
+            }
+        }
+    }
+    }
+}
+.dropdown-item {
+    text-align: center;
+}

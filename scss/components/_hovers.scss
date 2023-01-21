@@ -1,0 +1,68 @@
+/*---------------------------Hovers----------------------------*/
+
+/*---------------------------Menu----------------------------*/
+header li a:hover, .dropdown:hover .dropbtn{
+    transition: 0.5s;
+    background-color: #f9f9f9d5;
+    color: nth($colores, 1);
+    transition-duration: 0.5s;
+}
+
+/*---------------------------Hovers Servicios Inicio----------------------------*/
+section.servicios div div a img:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 0px nth($colores, 3) inset;
+    -webkit-box-shadow: 0px 0px 20px 0px nth($colores, 3) inset;
+    -moz-box-shadow: 0px 0px 20px 0px nth($colores, 3) inset;
+}
+section.servicios div div a:hover{
+    transition: 0.8s;
+    color: nth($colores, 1);
+    font-size: 1.2rem;
+}    
+section.servicios div div:hover { 
+    transform: scale(1.05);
+    box-shadow: 0px 0px 34px 0px nth($colores, 1);
+    -webkit-box-shadow: 0px 0px 34px 0px nth($colores, 1);
+    -moz-box-shadow: 0px 0px 34px 0px nth($colores, 1);
+} 
+
+/*---------------------------Hovers Servicios Otros----------------------------*/
+
+section.serviciosOtros div div a img:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 0px nth($colores, 3);
+    -webkit-box-shadow: 0px 0px 10px 0px nth($colores, 3);
+    -moz-box-shadow: 0px 0px 10px 0px nth($colores, 3);
+}
+section.serviciosOtros div div a:hover{
+    transition: 0.8s;
+    color: nth($colores, 1);
+    font-size: 1.2rem;
+}
+section.serviciosOtros div div:hover { 
+    transform: scale(1.05);
+    box-shadow: 0px 0px 34px 0px nth($colores, 1);
+    -webkit-box-shadow: 0px 0px 34px 0px nth($colores, 1);
+    -moz-box-shadow: 0px 0px 34px 0px nth($colores, 1);
+}
+
+
+
+/*---------------------------Formulario----------------------------*/
+div.formulario input.formularioBtn:hover{
+    transform: scale(1.05);
+    color: nth($colores, 2);
+    background-color: nth($colores, 4);
+    transition: 0.5s;
+}
+/*---------------------------Mapa----------------------------*/
+section.mapaCentro iframe.mapa:hover{
+    border-radius: 0% 0% 0% 0%;
+    transition: 1s;
+}
+/*---------------------------Footer----------------------------*/
+.footer a:hover{
+    opacity: 0.5;
+    transition: 0.9s;
+}

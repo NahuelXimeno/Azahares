@@ -608,7 +608,7 @@ section.servicios div div:hover {
 /*---------------------------Hovers Servicios Otros----------------------------*/
 section.serviciosOtros div div a img:hover {
   transition: 0.5s;
-  box-shadow: 0px 0px 10px 0px nthnth(#917046, #a38051, #ffffff, #333, 3);
+  box-shadow: 0px 0px 10px 0px #ffffff;
   -webkit-box-shadow: 0px 0px 10px 0px #ffffff;
   -moz-box-shadow: 0px 0px 10px 0px #ffffff; }
 
