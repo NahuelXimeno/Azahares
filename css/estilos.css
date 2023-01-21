@@ -192,6 +192,8 @@ section.servicios div {
       text-align: center;
       font-size: 2rem;
       margin-bottom: 100px; }
+    section.servicios div div h3 {
+      text-align: center; }
     section.servicios div div p {
       text-align: center; }
     section.servicios div div img {
@@ -201,7 +203,8 @@ section.servicios div {
       border-radius: 20px; }
     section.servicios div div img.linea {
       width: 80%;
-      height: 5%; }
+      height: 5%;
+      align-self: center; }
     section.servicios div div a {
       font-size: 1rem;
       text-align: center;
