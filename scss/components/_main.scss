@@ -1,401 +1,407 @@
 /*----------------------------Hero----------------------------*/
-.heroTexto{
-    @include flex (flex, center, center, row);
-    @include back (center, cover, no-repeat, fixed);
-    width: 100%;
-    height: 80vh;
-    background: url(../img/30.png);
-    font-weight: 400;
-    font-size: 10rem;
-    line-height: 80px;
-    color:nth($colores, 2);
-    padding: 20px;
-    text-align: center;
-    z-index: 1;
-    h2{
-        font-size: 8rem; 
-    }
+.heroTexto {
+  @include flex(flex, center, center, row);
+  @include back(center, cover, no-repeat, fixed);
+  width: 100%;
+  height: 80vh;
+  background: url(../img/30.png);
+  font-weight: 400;
+  font-size: 10rem;
+  line-height: 80px;
+  color: nth($colores, 2);
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+  h2 {
+    font-size: 8rem;
+  }
 }
-.heroTextoOtros{
-    @include flex (flex, center, center, row);
-    @include back (center, cover, no-repeat, fixed);
-    width: 100%;
-    height: 80vh;
-    background: url(../img/30.png);
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 80px;
-    color:nth($colores, 2);
-    padding: 20px;
-    text-align: center;
-    z-index: 1;
-    h2{
-        font-size: 8rem; 
-    }
+.heroTextoOtros {
+  @include flex(flex, center, center, row);
+  @include back(center, cover, no-repeat, fixed);
+  width: 100%;
+  height: 80vh;
+  background: url(../img/30.png);
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  color: nth($colores, 2);
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+  h2 {
+    font-size: 8rem;
+  }
 }
-.dentrohero{
-    @include back (center, 70%, no-repeat, fixed);
-    width: 100%;
-    height: 80vh;
-    opacity: 20%;
-    z-index: 1;
+.dentrohero {
+  @include back(center, 70%, no-repeat, fixed);
+  width: 100%;
+  height: 80vh;
+  opacity: 20%;
+  z-index: 1;
 }
-.hero{
-    background: url(../img/logo_azahares.gif);
-    @include back (center, 70%, no-repeat, fixed);
-    width: 100%;
-    height: 80vh;   
-    z-index: 1;
+.hero {
+  background: url(../img/logo_azahares.gif);
+  @include back(center, 70%, no-repeat, fixed);
+  width: 100%;
+  height: 80vh;
+  z-index: 1;
 }
 /*---------------------------Inicio----------------------------*/
 
-section.lineasDoradas{
-    p.margen{
-        color: nth($colores, 1);
-        text-shadow:nth($colores, 4);
-        text-align: center;
+section.lineasDoradas {
+  p.margen {
+    color: nth($colores, 1);
+    text-shadow: nth($colores, 4);
+    text-align: center;
+    font-size: 2rem;
+  }
+  p {
+    color: nth($colores, 1);
+    text-shadow: nth($colores, 4);
+    text-align: center;
+    font-size: 2rem;
+  }
+  @include flex(flex, center, none, column);
+  div.infoCaja {
+    margin-bottom: 100px;
+    width: 48%;
+    height: 34%;
+    background: url(../img/boxcoper.jpg);
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin-top: 100px;
+    .infoCajaTexto {
+      color: nth($colores, 2);
+      text-shadow: nth($colores, 4);
+      text-align: center;
+      text-shadow: 4px 4px 0px nth($colores, 4);
+      font-size: 3rem;
+      h2 {
+        margin-bottom: -20PX;
+      }
+      h3 {
         font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      img{
+        width: 80%;
+      }
     }
-    p{
-        color: nth($colores, 1);
-        text-shadow:nth($colores, 4);
-        text-align: center;
-        font-size: 2rem;
-    }
-    @include flex (flex, center, none, column);
-    div.infoCaja{
-        margin-bottom: 100px;
-        width:48vh;
-        height:34vh;
-        background: url(../img/boxcoper.jpg);
-        background-repeat: no-repeat;
-        z-index: 1;
-        margin-top: 100px;
-    .infoCajaTexto{
-            color:nth($colores, 2);
-            text-shadow:nth($colores, 4);
-            text-align: center;
-            text-shadow: 4px 4px 0px nth($colores, 4);
-            font-size: 3rem;
-        h3{
-                font-size: 2rem;
-            }
-        p{
-                font-size: 1rem;
-            }
-        }
-    }
+  }
 }
-.fondoSalon{
-    width: 100%;
-    height: 40vh;
-    background: url(../img/fondosalon2.png);
-    @include flex (flex, center, center, column);
-    @include back (center,cover, no-repeat, fixed);
-    margin: 100px 0 100px 0;
-    }
+.fondoSalon {
+  width: 100%;
+  height: 30vh;
+  background: url(../img/fondosalon2.png);
+  @include flex(flex, center, center, column);
+  @include back(center, cover, no-repeat, fixed);
+  margin: 50px 0 80px 0;
+}
 
 section.servicios {
-    h4{
-        font-size: 2rem;
+  h4 {
+    font-size: 2rem;
+    color: nth($colores, 1);
+    text-align: center;
+  }
+  div {
+    @include flex(flex, space-around, none, row);
+    margin-bottom: -100px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    div {
+      @include flex(flex, center, none, column);
+      border: 1px solid nth($colores, 1);
+      width: 230px;
+      height: 540px;
+      font-size: 1rem;
+      color: nth($colores, 1);
+      background-color: nth($colores, 4);
+      box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+      border-radius: 20px;
+      transition: 1.5s;
+      h2 {
         color: nth($colores, 1);
+        text-shadow: nth($colores, 4);
         text-align: center;
-    }
-    div{
-        @include flex (flex, space-around, none, row);
-        margin-bottom: -100px;
-        flex-wrap: wrap;
+        font-size: 2rem;
         margin-bottom: 100px;
-    div{
-        @include flex (flex, center, none, column);
-        border: 1px solid nth($colores, 1);
-        width:230px;
-        height: 540px;
-        font-size: 1rem;
-        color: nth($colores, 1);
-        background-color: nth($colores, 4);
-        box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-        -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-        -moz-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
+      }
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      img {
+        width: 220px;
+        height: 250px;
+        padding: 10px;
         border-radius: 20px;
-        transition: 1.5s;
-        h2{
-            color: nth($colores, 1);
-            text-shadow:nth($colores, 4);
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 100px;
+      }
+      img.linea {
+        width: 80%;
+        height: 5%;
+        align-self: center;
+      }
+      a {
+        font-size: 1rem;
+        text-align: center;
+        color: nth($colores, 3);
+        text-decoration: none;
+        margin-bottom: 20px;
+        img {
+          width: 150px;
+          height: 50px;
         }
-        h3{
-            text-align: center;
-        }
-        p{
-            text-align: center;
-        }
-        img{
-            width: 220px;
-            height:250px;
-            padding: 10px;
-            border-radius: 20px;
-        }
-        img.linea{
-            width:80%;
-            height: 5%;  
-            align-self: center;
-        }
-        a{
-            font-size: 1rem;
-            text-align:center;
-            color: nth($colores, 3);
-            text-decoration: none;
-            margin-bottom: 20px;
-            img{
-                width: 150px;
-                height:50px;
-            }
-        }  
+      }
     }
-}
+  }
 }
 
-div.dorado{
-    background-image: url(../img/boxcoper.jpg);
-    text-shadow: 2px 2px 0px nth($colores, 4);
+div.dorado {
+  background-image: url(../img/boxcoper.jpg);
+  text-shadow: 2px 2px 0px nth($colores, 4);
 }
 /*----------------------------Servicios otros----------------------------*/
-section.serviciosOtros div{
-    @include flex (flex, space-around, none, row);
+section.serviciosOtros div {
+  @include flex(flex, space-around, none, row);
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  h2 {
+    color: nth($colores, 1);
+    text-shadow: nth($colores, 4);
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 100px;
-    flex-wrap: wrap;
-    h2{
-        color: nth($colores, 1);
-        text-shadow:nth($colores, 4);
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 100px;
-        }
-    div { 
-        @include flex (flex, center, none, column);
-        border: 1px solid nth($colores, 1);
-        width:600px;
-        height: 260px;
-        font-size: 1rem;
-        color: nth($colores, 1);
-        background-color: nth($colores, 4);
-        box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-        -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-        -moz-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-        border-radius: 20px;
-        transition: 1.5s;
-        p{
-            margin-bottom: 0px;
-        }
-        img.linea{
-            width:5%;
-            height: 100%;  
-            }
-        img{
-            width: 220px;
-            height:250px;
-            padding: 10px;
-            border-radius: 20px;
-            }
-        a{
-            font-size: 1rem;
-            text-align:center;
-            color: nth($colores, 3);
-            text-decoration: none;
-            margin-bottom: 20px;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        } 
-        }
-}
-section.otroPresu{
-margin-bottom: 100px;
-    h4{
-        font-size: 2rem;
-        color: nth($colores, 1);
-        text-align: center;
+  }
+  div {
+    @include flex(flex, center, none, column);
+    border: 1px solid nth($colores, 1);
+    width: 600px;
+    height: 260px;
+    font-size: 1rem;
+    color: nth($colores, 1);
+    background-color: nth($colores, 4);
+    box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    transition: 1.5s;
+    p {
+      margin-bottom: 0px;
     }
+    img.linea {
+      width: 5%;
+      height: 100%;
+    }
+    img {
+      width: 220px;
+      height: 250px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    a {
+      font-size: 1rem;
+      text-align: center;
+      color: nth($colores, 3);
+      text-decoration: none;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
-
-
+section.otroPresu {
+  margin-bottom: 100px;
+  h4 {
+    font-size: 2rem;
+    color: nth($colores, 1);
+    text-align: center;
+  }
+}
 
 /*----------------------------Formulario----------------------------*/
-.formularioFondo{
-    @include flex (flex, center, center, column);
-    @include back (center, cover, no-repeat, fixed);
-    width: 100%;
-    height: 40vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.515)), url(../img/Screenshot_3.png);
+.formularioFondo {
+  @include flex(flex, center, center, column);
+  @include back(center, cover, no-repeat, fixed);
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.515)),
+    url(../img/Screenshot_3.png);
+}
+.formularioTitulo {
+  @include flex(flex, center, center, column);
+  font-size: 4rem;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+  color: nth($colores, 2);
+}
+.lineasDoradas {
+  @include flex(flex, center, center, column);
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+  div.bordeFormulario {
+    border: nth($colores, 1) solid 5px;
+    padding: 20px;
+    div {
+      @include flex(flex, center, center, column);
+      margin-bottom: 20px;
+      input {
+        border-bottom: 4px solid nth($colores, 2);
+        background-color: rgba(51, 51, 51, 0.247);
+        color: nth($colores, 3);
+      }
+      textarea {
+        border-bottom: 4px solid nth($colores, 2);
+        box-shadow: none;
+        border-top: rgba(51, 51, 51, 0);
+        border-left: rgba(51, 51, 51, 0);
+        border-right: rgba(51, 51, 51, 0);
+        background-color: rgba(51, 51, 51, 0.247);
+        color: nth($colores, 3);
+      }
+      .formularioBtn {
+        padding: 5px 20px 5px 20px;
+        border-radius: 15px;
+        background-color: nth($colores, 4);
+        border-color: nth($colores, 2);
+      }
     }
-    .formularioTitulo{
-    @include flex (flex, center, center, column);
+  }
+}
+/*----------------------------Mapa----------------------------*/
+section.mapaCentro {
+  @include flex(flex, center, center, column);
+  margin-top: 40px;
+  margin-bottom: 100px;
+  h3 {
     font-size: 4rem;
     margin-bottom: 10vh;
     margin-top: 5vh;
-    color:nth($colores, 2);
-}
-.lineasDoradas{
- @include flex (flex, center, center, column);
-width: 100%;
-height: 100vh;
-display: flex;
-margin-bottom: 100px;
-div.bordeFormulario{
-        border: nth($colores, 1) solid 5px;
-        padding: 20px;
-    div{
-        @include flex (flex, center, center, column);
-        margin-bottom: 20px;
-        input{
-            border-bottom: 4px solid  nth($colores, 2); 
-            background-color: rgba(51, 51, 51, 0.247);
-            color: nth($colores, 3);
-        }
-        textarea{
-            border-bottom:  4px solid  nth($colores, 2); 
-            box-shadow: none;
-            border-top: rgba(51, 51, 51, 0) ;
-            border-left: rgba(51, 51, 51, 0);
-            border-right: rgba(51, 51, 51, 0);
-            background-color: rgba(51, 51, 51, 0.247);
-            color: nth($colores, 3);
-        }
-        .formularioBtn{
-            padding:5px 20px 5px 20px;
-            border-radius: 15px;
-            background-color: nth($colores, 4);
-            border-color: nth($colores, 2);  
-        }
-    }
-}
-}
-    /*----------------------------Mapa----------------------------*/
-section.mapaCentro {
-    @include flex (flex, center, center, column);
+    color: nth($colores, 2);
+    border-bottom: 4px solid nth($colores, 2);
+  }
+  .mapa {
+    border-radius: 0% 100% 100% 100%;
     margin-top: 40px;
-    margin-bottom: 100px;
-    h3{
-        font-size: 4rem;
-        margin-bottom: 10vh;
-        margin-top: 5vh;
-        color:nth($colores, 2);
-        border-bottom:  4px solid  nth($colores, 2); ;
+    border: nth($colores, 1) solid 5px;
+    transition: all 1s ease-out 0s;
+  }
+  div {
+    p {
+      color: nth($colores, 2);
+      text-decoration: none;
     }
-    .mapa{
-        border-radius: 0% 100% 100% 100%;
-        margin-top: 40px;
-        border: nth($colores, 1) solid 5px;
-        transition: all 1s ease-out 0s;
-    }
-    div {
-        p{
-            color: nth($colores, 2);
-            text-decoration: none;
-        }
-    }
+  }
 }
 /*----------------------------Servicios otros----------------------------*/
-.heroServiciosCB{
-    background: url(../img/ClubBrB.jpg);
-    @include flex (flex, center, center, row);
-    @include back (center, cover, no-repeat, fixed);
-    }
-.heroServiciosCU{
-    background: url(../img/ClubUB.jpg);
-    @include flex (flex, center, center, row);
-    @include back (center, cover, no-repeat, fixed);
-    }
-.heroServiciosC{
-    background: url(../img/ChacraOlivosB.jpg);
-    @include flex (flex, center, center, row);
-    @include back (center, cover, no-repeat, fixed);
-    }
+.heroServiciosCB {
+  background: url(../img/ClubBrB.jpg);
+  @include flex(flex, center, center, row);
+  @include back(center, cover, no-repeat, fixed);
+}
+.heroServiciosCU {
+  background: url(../img/ClubUB.jpg);
+  @include flex(flex, center, center, row);
+  @include back(center, cover, no-repeat, fixed);
+}
+.heroServiciosC {
+  background: url(../img/ChacraOlivosB.jpg);
+  @include flex(flex, center, center, row);
+  @include back(center, cover, no-repeat, fixed);
+}
 
-    /*----------------------------Galeria------------------------------*/
-    
+/*----------------------------Galeria------------------------------*/
 
-.heroTextoGaleria{
-    @include flex (flex, center, center, column);
-    background: url(../img/boxcoper.jpg);
-    @include back (center, cover, no-repeat, fixed);
-    width: 100%;
-    height: 30vh;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 80px;
-    color:nth($colores, 2);
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 100px;
-    text-shadow: rgb(250, 247, 235) 2px 0 10px;
-    -webkit-text-shadow:rgb(250, 247, 235) 2px 0 10px ;
-    -moz-text-shadow: rgb(250, 247, 235) 2px 0 10px ;
-    z-index: 1;
-    h2{
-        font-size: 6rem;
+.heroTextoGaleria {
+  @include flex(flex, center, center, column);
+  background: url(../img/boxcoper.jpg);
+  @include back(center, cover, no-repeat, fixed);
+  width: 100%;
+  height: 30vh;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  color: nth($colores, 2);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+  text-shadow: rgb(250, 247, 235) 2px 0 10px;
+  -webkit-text-shadow: rgb(250, 247, 235) 2px 0 10px;
+  -moz-text-shadow: rgb(250, 247, 235) 2px 0 10px;
+  z-index: 1;
+  h2 {
+    font-size: 6rem;
+  }
+  img {
+    width: 40%;
+    height: 100%;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(80px, auto);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  div {
+    img {
+    margin-left: 2vh;
+    margin-right: 1vh;
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
     }
-    img{
-        width: 40%;
-        height: 100%;
+    video {
+        margin-left: 2vh;
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
     }
-    }
-    
-    .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(80px, auto);
-    margin-top: 100px;
-    margin-bottom: 100px;
-    div{
-        img{
-            width:90% ;
-            height:90% ;
-            object-fit: cover;
-            box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-            -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-            -moz-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-        }
-        video{
-            width:90% ;
-            height:90% ;
-            object-fit: cover;
-            box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-            -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-            -moz-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.75);
-        }
-    }
-    }
-.ados{
-    grid-column: span 2;
+  }
 }
-.acinco{
-    grid-row: span 2;
+.ados {
+  grid-column: span 2;
 }
-.avid{
-    grid-column: span 2;
+.acinco {
+  grid-row: span 2;
 }
-.bnueve{
-    grid-row: span 2;
+.avid {
+  grid-column: span 2;
 }
-.bdiez{
-    height:90% ;
-    grid-column: span 2;
+.bnueve {
+  grid-row: span 2;
 }
-.cuno{
-    grid-row: span 2;
+.bdiez {
+  height: 90%;
+  grid-column: span 2;
 }
-.cocho{
-    grid-row: span 2;
+.cuno {
+  grid-row: span 2;
 }
-.uocho{
-    grid-column: span 2;
+.cocho {
+  grid-row: span 2;
 }
-.wrapper .uruguay div img{
-    margin-left: 100px;
+.uocho {
+  grid-column: span 2;
+}
+.wrapper .uruguay div img {
+  margin-left: 100px;
 }

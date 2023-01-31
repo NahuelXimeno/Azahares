@@ -1,41 +1,37 @@
 /*---------------------------Variables----------------------------*/
 
-$colores:
-#917046, 
-#a38051,
-#ffffff,
-#333;
+$colores: #917046, #a38051, #ffffff, #333;
 
-@mixin flex ($flex, $justify, $align, $direction){
-    display: $flex;
-    justify-content:$justify;
-    align-items: $align;
-    flex-direction:$direction ;
+@mixin flex($flex, $justify, $align, $direction) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
 
-@mixin back ($position, $size, $repeat, $attach){
-    background-position: $position;
-    background-size: $size;
-    background-repeat: $repeat;
-    background-attachment: $attach;
+@mixin back($position, $size, $repeat, $attach) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-attachment: $attach;
 }
 
-%heroServicios{
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 100px;
-    z-index: 1;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    }
+%heroServicios {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 100px;
+  z-index: 1;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+}
 
-    .heroServiciosCB{
-    @extend %heroServicios;
-    }
-.heroServiciosCU{
-    @extend %heroServicios;
-    }
-.heroServiciosC{
-    @extend %heroServicios;
-    }
+.heroServiciosCB {
+  @extend %heroServicios;
+}
+.heroServiciosCU {
+  @extend %heroServicios;
+}
+.heroServiciosC {
+  @extend %heroServicios;
+}
