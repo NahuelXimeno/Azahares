@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light menu ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logoSize" src="../img/logo_azahares.png"
+                <a class="navbar-brand" href="../index.html"><img class="logoSize" src="../img/logo_azahares2.png"
                         alt="Logo Azahares"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -33,11 +33,11 @@
                             <a class="nav-link menuLetras" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle menuLetras activo" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Salon Azahares</a>
+                            <a class="nav-link dropdown-toggle menuLetras" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Salon Azahares</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="./bodas.html">Bodas</a>
-                                <a class="dropdown-item activo" href="./15anios.html">15 Años</a>
+                                <a class="dropdown-item" href="./15años.html">15 Años</a>
                                 <a class="dropdown-item" href="./brindis.html">Brindis</a>
                                 <a class="dropdown-item" href="./otros.html">Otros</a>
                             </ul>
@@ -47,13 +47,13 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="./clubbrasilero.html">Club Brasilero</a>
                                 <a class="dropdown-item" href="./cluburuguay.html">Club Uruguay</a>
-                                <a class="dropdown-item" href="./chacara.html">Chacra</a>
+                                <a class="dropdown-item" href="./chacra.html">Chacra</a>
                             </ul>
                         <li class="nav-item">
                             <a class="nav-link menuLetras" href="./galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menuLetras" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link menuLetras activo" href="./contactos.html">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -62,72 +62,52 @@
     </header>
     <main>
         <section class="heroTexto">
-            <h2>15 AÑOS</h2>
+            <h2 class="contact">CONTÁCTENOS</h2>
         </section>
-        <section class="heroTextoGaleria">
-            <img src="../img/logo_azahares.png" alt="Logo Azahares">
+        <section class="lineasDoradas">
+            <h3 class="formularioTitulo"> ¿En que te podemos ayudar?</h3>
+            <form action="https://formsubmit.co/d36fc6ee8d24e17a7e1ac4c8f9ff2bec" method="POST">
+                <div class="bordeFormulario">
+                    <div class="formulario">
+                        <input type="text" name="nombre" required="required" placeholder="Nombre">
+                    </div>
+                    <div class="formulario">
+                        <input type="email" name="email" required="required" placeholder="E-Mail">
+                    </div>
+                    <div class="formulario">
+                        <input type="text" name="telefono" required="required" placeholder="Telefono">
+                    </div>
+                    <div class="formulario">
+                        <textarea name="mensaje" required="required" id="" cols="30" rows="10"
+                            placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="formulario">
+                        <input class="formularioBtn" type="submit">
+                    </div>
+                </div>
+                <input type="hidden" name="_next" value="https://nahuelximeno.github.io/Azahares/">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
         </section>
-        <section class="servicios">
+        <div class="formularioFondo"></div>
+        <section class="mapaCentro">
+            <h3 class="mapaTitulo"> Nuestra Ubicación</h3>
             <div>
-                <div>
-                    <img src="../img/quinceA.jpg" alt="Chicas con Cotillon">
-                    <h3>Opción A</h3>
-                    <img class="linea" src="../img/line.png" alt="">
-                    <p>Para un mínimo de 100 Invitados </p>
-                    <br>
-                    <p>TOTAL SERVICIO INTEGRAL: </p>
-                    <p><b>$ 215.000</b> IVA incluido.</p>
-                    <br>
-                    <a href="../img/15-A.pdf" target="_blank"><img src="../img/descargue.png"
-                            alt="Descargar presupuesto A"></a>
-                </div>
-                <div class="dorado">
-                    <img src="../img/quinceB.jpg" alt="Chica con luces">
-                    <h3>Opción B</h3>
-                    <img class="linea" src="../img/line.png" alt="">
-                    <p>Para un mínimo de 100 Invitados</p>
-                    <br>
-                    <p>TOTAL SERVICIO INTEGRAL: </p>
-                    <p><b>$ 205.000</b> IVA incluido.</p>
-                    <br>
-                    <a href="../img/15-B.pdf" target="_blank"><img src="../img/descargue.png"
-                            alt="Descargar presupuesto B"></a>
-                </div>
-                <div>
-                    <img src="../img/15inicio.jpg" alt="Quinceañera cortando la torta">
-                    <h3>Opción C</h3>
-                    <img class="linea" src="../img/line.png" alt="">
-                    <p>Servicio completo </p>
-                    <br>
-                    <p>TOTAL SERVICIO INTEGRAL: </p>
-                    <p><b>$ 230.000</b> IVA incluido.</p>
-                    <br>
-                    <a href="../img/15-C.pdf" target="_blank"><img src="../img/descargue.png"
-                            alt="Descargar presupuesto C"></a>
-                </div>
-                <div class="dorado">
-                    <img src="../img/quinceD.jpg" alt="Mesa de la torta">
-                    <h3>Promo</h3>
-                    <img class="linea" src="../img/line.png" alt="">
-                    <p>Para un mínimo de 100 Invitados</p>
-                    <br>
-                    <p>TOTAL SERVICIO INTEGRAL: </p>
-                    <p><b>$ 145.000</b> IVA incluido.</p>
-                    <br>
-                    <a href="../img/100invitadospromo.pdf" target="_blank"><img src="../img/descargue.png"
-                            alt="Descargar presupuesto B"></a>
-                </div>
+                <p>Paysandú 894 esq, </p>
+                <p>Convención, Montevideo,</p>
+                <p>Uruguay.</p>
             </div>
-            <h4>En caso de que estos presupuestos no sean de su agrado, </h4>
-            <h4>se puede coordinar una reunión y realizaremos un presupuesto</h4>
-            <h4>que se adecue a sus gustos y necesidades.</h4>
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209830.98360267776!2d-56.22359865481906!3d-34.74024587983447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802ea9831c37%3A0x117adb62deaa7dab!2sSal%C3%B3n%20Azahares%20Fiestas%20y%20Eventos!5e0!3m2!1ses-419!2suy!4v1669925012534!5m2!1ses-419!2suy"
+                width="300" height="300 allowfullscreen="" loading=" lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
         <div class="containerFooter">
             <div class="footer">
                 <div class="logo">
-                    <img src="../img/logo_azahares.png" alt="logo de azahares">
+                    <img src="../img/logo_azahares.png" alt="">
                 </div>
             </div>
             <div class="footer">
@@ -135,16 +115,14 @@
                 <a class="foot"
                     href="https://wa.me/59894568209?text=Servicio%20integral%20para%20Fiestas%20&%20Eventos."
                     target="_blank"><img src="../img/whatsapp.png" alt="Whatsapp">Whatsapp</a>
-                <a class="foot" href="tel:29018499"><img src="../img/telephone.png"
-                        alt=" numero telefonico 29018499">29018499 </a>
-                <a class="foot" href="tel:094568209"><img src="../img/smartphone.png" alt="numero de celular 094568209">
-                    094568209</a>
+                <a class="foot" href="tel:29018499"><img src="../img/telephone.png" alt="">29018499</a>
+                <a class="foot" href="tel:094568209"><img src="../img/smartphone.png" alt="">094568209</a>
             </div>
             <div class="footer">
                 <h2>Redes Sociales</h2>
-                <a class="foot" href="https://www.instagram.com/complejoazahares/" target="_blank"> <img
+                <a class="foot margen" href="https://www.instagram.com/complejoazahares/" target="_blank"> <img
                         src="../img/instagram.png" alt="Instagram">Instagram</a>
-                <a class="foot" href="https://www.facebook.com/complejo.azahares" target="_blank"><img
+                <a class="foot margen" href="https://www.facebook.com/complejo.azahares" target="_blank"><img
                         src="../img/facebook.png" alt="Facebook">Facebook</a>
             </div>
         </div>

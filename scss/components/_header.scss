@@ -1,14 +1,21 @@
 header {
   z-index: 10;
   nav {
+    
     .navbar-nav {
+      margin-left:40px ;
       --bs-nav-link-hover-color: #917046;
+      
     }
+    
     div {
       .logoSize {
-        width: 100px;
+        width: 200px;
+        height: 100px;
       }
+      
       li {
+        margin-left: 10px;
         .menuLetras {
           color: nth($colores, 3);
         }
